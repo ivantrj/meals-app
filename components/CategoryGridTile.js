@@ -3,7 +3,7 @@ import React from "react";
 
 export default function CategoryGridTile({ title, color }) {
   return (
-    <View style={[styles.gridItem, { backgroundColor: color }]}>
+    <View style={styles.gridItem}>
       <Pressable
         style={({ pressed }) => [
           styles.button,
@@ -44,6 +44,7 @@ const styles = StyleSheet.create({
     padding: 16,
     justifyContent: "center",
     alignItems: "center",
+    borderRadius: 8,
   },
   title: {
     fontWeight: "bold",
